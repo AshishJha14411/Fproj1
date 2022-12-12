@@ -9,8 +9,12 @@ align-items: center;
 margin: auto;
 width: 50%;
 }
+.header{
+  color: aliceblue;
+  font-size: 5rem;
+}
 input{
-  margin-top: 10rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   height: 4rem;
   width: 40rem;
@@ -24,4 +28,14 @@ button{
   height: 4rem;
   background-color: rgb(37, 127, 205);
 
+}
+.card{
+  color: aliceblue;
+  margin-top: 5rem;
+  display: flex;
+  width: 140%;
+  justify-content: space-around;
+}
+.text{
+  color: aliceblue;
 }
