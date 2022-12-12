@@ -12,7 +12,7 @@ function App() {
   };
   const calldata = async () => {
     const response = await axios.get(
-      `http://www.omdbapi.com/?t=${text}&apikey=46c1e856`
+      `http://www.omdbapi.com/?t=${text}&apikey=${process.env.REACT_APP_API_KEY}`
     );
     setData(response.data);
   };
