@@ -2,17 +2,17 @@ import React from "react";
 
 const Card = (movieData) => {
   return (
-    <div className="card">
+    <div>
       {/* Mapping through the array of the Object values */}
       {Object.values(movieData).map((item) => {
         return (
-          <div key={movieData.imdbID}>
+          <div key={movieData.imdbID} className="card">
             <div>
               <img src={item.Poster} alt="" />
+            </div>
+            <div className="rightSec">
               <h2 className="title">{item.Title}</h2>
               <h4>Released in : {item.Released}</h4>
-            </div>
-            <div>
               <p>
                 <span>Director: </span> {item.Director}
               </p>
