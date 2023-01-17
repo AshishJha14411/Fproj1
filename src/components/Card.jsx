@@ -3,7 +3,7 @@ import React from "react";
 const Card = (movieData) => {
   return (
     <div>
-      {/* Mapping through the array of the Object values */}
+    
       {Object.values(movieData).map((item) => {
         return (
           <div key={movieData.imdbID} className="card">
